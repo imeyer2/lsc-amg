@@ -31,7 +31,7 @@ finite elements on random meshes: rotated anisotropic diffusion, a log-normal co
 **Training** ([`train_es_HPC.py`](train_es_HPC.py)). The policy is trained with OpenAI-style evolution
 strategies: antithetic Gaussian perturbations, rank-based fitness shaping, and Adam on the ES gradient.
 
-Reward: −log(PCG iterations) − λ·log(operator complexity) (train_es_HPC.py::amg_reward; manuscript runs used λ = 0.1, --sigma_scale_threshold 50)
+Reward: −log(PCG iterations) − λ·log(operator complexity) (`train_es_HPC.py::amg_reward`; manuscript runs used λ = 0.1, `--sigma_scale_threshold 50`). This default produced every reported result.
 `--reward residual --reward_k K` instead trains on the K-step PCG residual log-ratio against a default SA-AMG baseline, minus λ·log(operator complexity).
 
 ## Headline result: fewer iterations, more time
@@ -42,7 +42,7 @@ within one job. The GAT is the manuscript configuration (λ = 0.1, threshold noi
 October 2026 on corrected code (best of 5 seeds). The classical reference `theta:0.1` is the fastest of the
 classical two-level rules tuned for total time, as measured on these test matrices.
 
-| seconds, mean over 16 matrices | GAT (50k-trained, V100 forward) | classical `theta:0.1` |
+| mean over 16 matrices (seconds unless noted) | GAT (50k-trained, V100 forward) | classical `theta:0.1` |
 |---|---|---|
 | PCG iterations | **27.9** | **41.6** |
 | features (1 CPU thread) + GNN forward (V100) + build `C` | 0.043 + 0.015 + 0.005 | 0 + 0 + 0.011 |
@@ -56,7 +56,7 @@ The learned graph keeps only 35% of the edges (the classical rule keeps 63%). Th
 smaller, and the coarse grid is 60% larger. Its direct LU factor is 2.3× larger, so factorisation costs
 0.19 s more and every V-cycle costs about 50% more. The 33% fewer iterations save only 0.010 s of solve
 time. The reward counts iterations and operator complexity but not coarse-LU fill, so it does not see
-this cost. Paired, the GAT is **+46.8% [+41.8, +51.8]** slower and is faster on 0 of 16 matrices.
+this cost. Paired, the GAT is **+46.8% [95% CI +41.8, +51.8]** slower and is faster on 0 of 16 matrices.
 
 Data: [`results/twolevel_2026-10/bar/def_50000_anisotropy.json`](results/twolevel_2026-10/bar/def_50000_anisotropy.json).
 Reproduce the table (NumPy only): `python -m twolevel.tables vsbest results/twolevel_2026-10/bar/def_50000_anisotropy.json`
@@ -73,7 +73,7 @@ In a later, smaller study (October 2026, not part of the thesis), an **11-parame
 policy** modulates the classical rule with cheap node features. On 50k perforated-L it takes **0.290 s
 versus 0.338 s** for `theta:0.2` (18.5 vs 28.6 iterations). The mean paired reduction is **−14.0%
 [−15.4, −12.7]**, and it is faster on all 16 test matrices. Applied zero-shot at 200k and 500k unknowns,
-the gain is −19.5% and −22.8% (8 of 8 matrices each). The other two families do not show a gain.
+the gain is −19.5% and −22.3% (8 of 8 matrices each). The other two families do not show a gain.
 Anisotropy is a tie (+1.3% [−0.1, +2.8]). On lognormal the policy loses (+2.4% [−0.4, +5.2] and +4.0%
 [+1.7, +6.3] for the two variants).
 
@@ -113,6 +113,9 @@ python -m twolevel.tables vsbest results/twolevel_2026-10/bar/def_50000_anisotro
 python -m twolevel.tables vsbest results/twolevel_2026-10/final/reward_def_50000_perforated_l.json
 ```
 
+Compare the `LSC 50k-trained (s4) fwd V100` row with `theta:0.1` (first command), and
+`node:perforated_l_noderow_costtgt` with `theta:0.2` (second command).
+
 **B. Run a small end-to-end experiment on a CPU (about 3–4 minutes).** This needs Python 3.11 or newer.
 
 ```bash
@@ -144,8 +147,8 @@ replaying stored results, rerunning on corrected inputs, and reproducing the ori
 
 The learned hierarchy is always two-level, so its coarse direct solve dominates at larger sizes. The
 GAT's reward does not price coarse-LU fill. Against a classical two-level rule tuned for total time, the
-GAT loses at 50k on all three families even with a V100 forward, and on a CPU its forward alone costs
-more than the whole classical solve. The small follow-up policy wins only on perforated-L. All timings
+GAT loses at 50k on all three families even with a V100 forward, and on a CPU its forward alone (0.36 s)
+costs more than the classical PCG phase (0.32 s). The small follow-up policy wins only on perforated-L. All timings
 are single-thread observations on specific cluster nodes. Iteration counts and paired percentages
 transfer better than seconds. The original manuscript runs used unseeded data generation, so their exact
 matrices cannot be regenerated. Seeded reruns reproduce them within seed noise. Further details are in

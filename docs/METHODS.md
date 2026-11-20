@@ -30,7 +30,7 @@ connection* is learned rather than hand-tuned.
    - It calls PyAMG `smoothed_aggregation_solver(A, strength=('predefined', {'C': C}))` with Jacobi
      prolongation smoothing and a `splu` coarse solver.
    - With a predefined strength graph, PyAMG builds a **two-level** hierarchy.
-5. Reward: −log(PCG iterations) − λ·log(operator complexity) (train_es_HPC.py::amg_reward; manuscript runs used λ = 0.1, --sigma_scale_threshold 50)
+5. Reward: −log(PCG iterations) − λ·log(operator complexity) (`train_es_HPC.py::amg_reward`; manuscript runs used λ = 0.1, `--sigma_scale_threshold 50`). This default produced every reported result.
    `--reward residual --reward_k K` instead trains on the K-step PCG residual log-ratio against a default SA-AMG baseline, minus λ·log(operator complexity).
 
 **Training** (`train_es_HPC.py`). The map from parameters to `C`, to the hierarchy and to the reward is not

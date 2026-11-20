@@ -45,8 +45,8 @@ total/total_ref − 1.
 - On lognormal and perforated-L the GAT is near the classical coarse size:
   - lognormal needs more iterations than `sym:0.02` (32.4 vs 28.4);
   - perforated-L needs fewer (23.3 vs 28.6), but 0.06 s of features + forward + C cancels the gain.
-- A 1-thread CPU forward of the 52.8k-parameter GAT costs 0.35–0.39 s at 50k. That is more than the whole
-  classical solve.
+- A 1-thread CPU forward of the 52.8k-parameter GAT costs 0.35–0.39 s at 50k. That is more than the classical PCG
+  phase (0.32 s).
 
 ### Small learned policies vs. the tuned classical reference of the same job
 
@@ -57,7 +57,7 @@ the matrices where the learned policy wins.
 |---|---|---|---|---|---|
 | perforated-L | 50k | `theta:0.2` 0.338 s | noderow 0.290 s, **−14.0%** [−15.4, −12.7], 16/16 | 0.277 s, **−13.2%**, 16/16 | learned wins |
 | perforated-L | 200k | `theta:0.2` 1.715 s | **−19.5%**, 8/8 | (not bundled) | wins |
-| perforated-L | 500k | `theta:0.2` 5.566 s | **−22.8%**, 8/8 | (not bundled) | wins |
+| perforated-L | 500k | `theta:0.2` 5.566 s | **−22.3%**, 8/8 | (not bundled) | wins |
 | anisotropy | 50k | `theta:0.1` 0.578 s | noderow +1.3% [−0.1, +2.8], 5/16 | +2.2%, 4/16 | tie / no gain |
 | lognormal | 50k | `sym:0.02` 0.406 s | nodeabs +2.4% [−0.4, +5.2], 4/16; cost50k variant +4.0% [+1.7, +6.3] | +4.3%, 2/16 | loses |
 

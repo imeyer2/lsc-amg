@@ -1001,7 +1001,7 @@ def train_es(model, train_set, args, shm_meta, test_set=None):
         from multinode import Dispatcher
         node_cfg = {
             "speedups": ",".join(sorted(_SPEEDUPS)),
-            "env": {k: os.environ[k] for k in os.environ if k.startswith("LSC_STAG")},
+            "env": {k: os.environ[k] for k in os.environ if k.startswith(("LSC_STAG", "LSC_REWARD"))},
             "model_kwargs": model_kwargs, "k_per_row": args.k_per_row,
             "selection_mode": args.selection_mode, "reward_lambda_cx": args.reward_lambda_cx,
             "fast_policy": args.fast_policy, "feature_preset": args.feature_preset,
@@ -1641,7 +1641,8 @@ def main():
                         help="iters (default): -log(PCG iters) - λ·log(OC); residual: K-step "
                              "residual log-ratio vs SA-AMG - λ·log(OC) (env LSC_REWARD)")
     parser.add_argument("--reward_k", type=int, default=None,
-                        help="K PCG iterations for --reward residual (default 16; env LSC_REWARD_K)")
+                        help="K PCG iterations for --reward residual (default 16; env LSC_REWARD_K); "
+                             "in that mode the logged iteration counts are K, not PCG solves")
     parser.add_argument("--reward_lambda_cx", type=float, default=2.0,
                         help="Weight for operator-complexity penalty in "
                              "reward: R = -log(iters) - λ·log(OC) (paper: 0.1; default 2.0, docs/METHODS.md)")
