@@ -1,0 +1,15 @@
+# Zero-shot size generalisation: the 50k model of each problem evaluated on
+# larger matrices (16 test samples, seed 1000), as in the paper.
+problem,label,grid_n
+lognormal,100k,100000
+lognormal,150k,150000
+lognormal,200k,200000
+lognormal,500k,500000
+anisotropy,100k,100000
+anisotropy,150k,150000
+anisotropy,200k,200000
+anisotropy,500k,500000
+perforated_l,100k,67820
+perforated_l,150k,101730
+perforated_l,200k,135640
+perforated_l,500k,339000

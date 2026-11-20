@@ -1,0 +1,1922 @@
+{
+  "0": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349546,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 31385.10191821467,
+        "kappa_eff": 2052.539392097591,
+        "setup_time": 7.469207048416138e-07,
+        "solve_time": 0.5827423501759768,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2296.617861647702,
+        "kappa_eff": 142.77535202814678,
+        "setup_time": 0.000954936258494854,
+        "solve_time": 0.6197368251159787,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.523338106593432,
+        "kappa_eff": 1.3557166596286117,
+        "setup_time": 0.301904340274632,
+        "solve_time": 0.06808794848620892,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 100,
+        "kappa_raw": 104.31534216918641,
+        "kappa_eff": 58.95911485064096,
+        "setup_time": 0.12384959962219,
+        "solve_time": 1.119824512861669,
+        "op_complexity": 1.288911902868292,
+        "grid_complexity": 1.131028714803457
+      },
+      "ruge_stuben": {
+        "iters": 184,
+        "kappa_raw": 317.2906025299947,
+        "kappa_eff": 92.07682491510356,
+        "setup_time": 0.0769170755520463,
+        "solve_time": 1.9007835108786821,
+        "op_complexity": 1.8174260326251768,
+        "grid_complexity": 1.497510852682305
+      },
+      "learned": {
+        "iters": 32,
+        "kappa_raw": 10.331266358015544,
+        "kappa_eff": 9.077437111711157,
+        "setup_time": 1.8194413306191564,
+        "solve_time": 0.6948054814711213,
+        "op_complexity": 1.8906810548540107,
+        "grid_complexity": 1.2741646421601815
+      }
+    }
+  },
+  "1": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349515,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 15516.752616878937,
+        "kappa_eff": 1010.765069638104,
+        "setup_time": 4.3958425521850586e-07,
+        "solve_time": 0.5823572697117925,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2278.585193052949,
+        "kappa_eff": 144.6878863234192,
+        "setup_time": 0.0009216070175170898,
+        "solve_time": 0.6120013846084476,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.348732224211947,
+        "kappa_eff": 1.2184684133157364,
+        "setup_time": 0.2853502696380019,
+        "solve_time": 0.06667560618370771,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 91,
+        "kappa_raw": 80.02984339792688,
+        "kappa_eff": 51.951894671687946,
+        "setup_time": 0.11226231977343559,
+        "solve_time": 1.0036601582542062,
+        "op_complexity": 1.286082142397322,
+        "grid_complexity": 1.1302746082004103
+      },
+      "ruge_stuben": {
+        "iters": 171,
+        "kappa_raw": 342.65467304375875,
+        "kappa_eff": 98.13497849131197,
+        "setup_time": 0.0730009488761425,
+        "solve_time": 1.7636144142597914,
+        "op_complexity": 1.8191007539018353,
+        "grid_complexity": 1.4977198956528666
+      },
+      "learned": {
+        "iters": 29,
+        "kappa_raw": 8.473282021359328,
+        "kappa_eff": 7.173834610522302,
+        "setup_time": 0.1283853817731142,
+        "solve_time": 0.649264357984066,
+        "op_complexity": 1.8884196672531937,
+        "grid_complexity": 1.273493040205508
+      }
+    }
+  },
+  "2": {
+    "matrix_size": 50216,
+    "matrix_nnz": 349592,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 16003.72581805232,
+        "kappa_eff": 1046.7077227627492,
+        "setup_time": 4.861503839492798e-07,
+        "solve_time": 0.5821054521948099,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2317.8356947839306,
+        "kappa_eff": 142.36906256062144,
+        "setup_time": 0.0009163748472929001,
+        "solve_time": 0.6107818111777306,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.4866329817866668,
+        "kappa_eff": 1.2954467751874335,
+        "setup_time": 0.29628597293049097,
+        "solve_time": 0.06630670465528965,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 99,
+        "kappa_raw": 101.46318184657406,
+        "kappa_eff": 56.59054111499193,
+        "setup_time": 0.08582605328410864,
+        "solve_time": 1.0913000293076038,
+        "op_complexity": 1.2864939701137326,
+        "grid_complexity": 1.1301178907121237
+      },
+      "ruge_stuben": {
+        "iters": 182,
+        "kappa_raw": 310.5292040969063,
+        "kappa_eff": 90.76638484961592,
+        "setup_time": 0.07268982753157616,
+        "solve_time": 1.8699096217751503,
+        "op_complexity": 1.8160684455021854,
+        "grid_complexity": 1.4966345387924167
+      },
+      "learned": {
+        "iters": 32,
+        "kappa_raw": 10.082952814438501,
+        "kappa_eff": 9.098328286643097,
+        "setup_time": 0.13021112326532602,
+        "solve_time": 0.6843277271836996,
+        "op_complexity": 1.8972001647634957,
+        "grid_complexity": 1.2754500557591206
+      }
+    }
+  },
+  "3": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349520,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 9333.236598914402,
+        "kappa_eff": 696.0135037017318,
+        "setup_time": 5.168840289115906e-07,
+        "solve_time": 0.5849148230627179,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1949.5412088429348,
+        "kappa_eff": 135.61376358175065,
+        "setup_time": 0.000910644419491291,
+        "solve_time": 0.6102734478190541,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 13,
+        "kappa_raw": 1.264399463531669,
+        "kappa_eff": 1.2358546295154322,
+        "setup_time": 0.30388041492551565,
+        "solve_time": 0.07826422061771154,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 41,
+        "kappa_raw": 14.86164418975589,
+        "kappa_eff": 13.365620961290988,
+        "setup_time": 0.11474332772195339,
+        "solve_time": 0.4541472867131233,
+        "op_complexity": 1.286006523231861,
+        "grid_complexity": 1.13017244812617
+      },
+      "ruge_stuben": {
+        "iters": 109,
+        "kappa_raw": 218.423965218899,
+        "kappa_eff": 67.62931482554777,
+        "setup_time": 0.07246193382889032,
+        "solve_time": 1.1200718199834228,
+        "op_complexity": 1.8260328450446326,
+        "grid_complexity": 1.5021107969254053
+      },
+      "learned": {
+        "iters": 18,
+        "kappa_raw": 3.5758720791387453,
+        "kappa_eff": 3.1842947326321123,
+        "setup_time": 0.12876324821263552,
+        "solve_time": 0.5022667990997434,
+        "op_complexity": 1.891674296177615,
+        "grid_complexity": 1.2751204747301765
+      }
+    }
+  },
+  "4": {
+    "matrix_size": 50220,
+    "matrix_nnz": 349542,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7668.067303628412,
+        "kappa_eff": 488.2282139524074,
+        "setup_time": 1.1194497346878052e-06,
+        "solve_time": 0.5819109659641981,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2233.524705549846,
+        "kappa_eff": 144.40676233223607,
+        "setup_time": 0.0009195320308208466,
+        "solve_time": 0.608444219455123,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.3612770502125568,
+        "kappa_eff": 1.3242625873862526,
+        "setup_time": 0.29506686329841614,
+        "solve_time": 0.06062826421111822,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 109,
+        "kappa_raw": 116.84541154820006,
+        "kappa_eff": 63.65256787679001,
+        "setup_time": 0.13878464046865702,
+        "solve_time": 1.2041507475078106,
+        "op_complexity": 1.28699555418233,
+        "grid_complexity": 1.130605336519315
+      },
+      "ruge_stuben": {
+        "iters": 169,
+        "kappa_raw": 239.01042909342027,
+        "kappa_eff": 88.76928991613153,
+        "setup_time": 0.07285255007445812,
+        "solve_time": 1.7452352736145258,
+        "op_complexity": 1.8179131549284493,
+        "grid_complexity": 1.4962763839107924
+      },
+      "learned": {
+        "iters": 34,
+        "kappa_raw": 11.668063469884652,
+        "kappa_eff": 10.484395258990794,
+        "setup_time": 0.12790352292358875,
+        "solve_time": 0.6870937086641788,
+        "op_complexity": 1.8656041334088607,
+        "grid_complexity": 1.2678813221823975
+      }
+    }
+  },
+  "5": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349545,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 9289.12833415966,
+        "kappa_eff": 599.8187930401781,
+        "setup_time": 6.882473826408386e-07,
+        "solve_time": 0.5837316550314426,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2355.4829501805884,
+        "kappa_eff": 143.1116063952646,
+        "setup_time": 0.0009101582691073418,
+        "solve_time": 0.6090938625857234,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.5073083796357247,
+        "kappa_eff": 1.2609907643042448,
+        "setup_time": 0.29300906509160995,
+        "solve_time": 0.06536439340561628,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 110,
+        "kappa_raw": 118.66857652980015,
+        "kappa_eff": 63.174363201239444,
+        "setup_time": 0.08193554449826479,
+        "solve_time": 1.2141963336616755,
+        "op_complexity": 1.2884864609706905,
+        "grid_complexity": 1.1308468906190885
+      },
+      "ruge_stuben": {
+        "iters": 175,
+        "kappa_raw": 281.44207442895566,
+        "kappa_eff": 87.53625510535221,
+        "setup_time": 0.07348652370274067,
+        "solve_time": 1.7986056469380856,
+        "op_complexity": 1.8152741420990144,
+        "grid_complexity": 1.494095860132619
+      },
+      "learned": {
+        "iters": 36,
+        "kappa_raw": 12.677052469499978,
+        "kappa_eff": 11.501044032752427,
+        "setup_time": 0.12832782603800297,
+        "solve_time": 0.7415980994701385,
+        "op_complexity": 1.8907865940007724,
+        "grid_complexity": 1.2738804038312193
+      }
+    }
+  },
+  "6": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349525,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7631.949313500064,
+        "kappa_eff": 552.9257106960465,
+        "setup_time": 4.544854164123535e-07,
+        "solve_time": 0.5819431757554412,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2014.909950825552,
+        "kappa_eff": 138.4670334974672,
+        "setup_time": 0.0009173722937703133,
+        "solve_time": 0.6076607219874859,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 13,
+        "kappa_raw": 1.3286891275814008,
+        "kappa_eff": 1.2565162813968405,
+        "setup_time": 0.2950479360297322,
+        "solve_time": 0.07840309292078018,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 47,
+        "kappa_raw": 19.315830138768447,
+        "kappa_eff": 17.049359418602382,
+        "setup_time": 0.11703617498278618,
+        "solve_time": 0.5174966575577855,
+        "op_complexity": 1.2895758529432801,
+        "grid_complexity": 1.1309066289651326
+      },
+      "ruge_stuben": {
+        "iters": 119,
+        "kappa_raw": 231.3475615169879,
+        "kappa_eff": 73.63404349617852,
+        "setup_time": 0.07306838128715754,
+        "solve_time": 1.2243203995749354,
+        "op_complexity": 1.8299606608969317,
+        "grid_complexity": 1.502518966924869
+      },
+      "learned": {
+        "iters": 22,
+        "kappa_raw": 5.925114154412232,
+        "kappa_eff": 4.17593350138744,
+        "setup_time": 0.13030696660280228,
+        "solve_time": 0.5698589803650975,
+        "op_complexity": 1.8857649667405765,
+        "grid_complexity": 1.273462235408909
+      }
+    }
+  },
+  "7": {
+    "matrix_size": 50216,
+    "matrix_nnz": 349528,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 35863.57567164386,
+        "kappa_eff": 2701.3042280945483,
+        "setup_time": 1.150183379650116e-06,
+        "solve_time": 0.5842492068186402,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1666.770150287458,
+        "kappa_eff": 137.51939443684319,
+        "setup_time": 0.0009191790595650673,
+        "solve_time": 0.6106654964387417,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 500,
+        "kappa_raw": 8087.25638942234,
+        "kappa_eff": 625.7876008447882,
+        "setup_time": 0.30989986658096313,
+        "solve_time": 2.9467837437987328,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 38,
+        "kappa_raw": 15.55968440685726,
+        "kappa_eff": 11.190745146278253,
+        "setup_time": 0.11253526993095875,
+        "solve_time": 0.4228765908628702,
+        "op_complexity": 1.2895533405049096,
+        "grid_complexity": 1.1308547076628963
+      },
+      "ruge_stuben": {
+        "iters": 98,
+        "kappa_raw": 178.75567931461717,
+        "kappa_eff": 72.0047381867336,
+        "setup_time": 0.07360079605132341,
+        "solve_time": 1.01541081443429,
+        "op_complexity": 1.834270788034149,
+        "grid_complexity": 1.5058347936912537
+      },
+      "learned": {
+        "iters": 19,
+        "kappa_raw": 4.5685192821939005,
+        "kappa_eff": 3.50039552832936,
+        "setup_time": 0.1286374470219016,
+        "solve_time": 0.5378746725618839,
+        "op_complexity": 1.8930014190565563,
+        "grid_complexity": 1.275151346184483
+      }
+    }
+  },
+  "8": {
+    "matrix_size": 50216,
+    "matrix_nnz": 349546,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 11590.442331600347,
+        "kappa_eff": 783.5558866080295,
+        "setup_time": 9.117648005485535e-07,
+        "solve_time": 0.6004967158660293,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1940.9552769991553,
+        "kappa_eff": 140.8011289625159,
+        "setup_time": 0.0009163916110992432,
+        "solve_time": 0.6125613441690803,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.3254088969351807,
+        "kappa_eff": 1.2208834189059654,
+        "setup_time": 0.2955548753961921,
+        "solve_time": 0.07318949140608311,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 53,
+        "kappa_raw": 26.47523456738096,
+        "kappa_eff": 22.03414751031284,
+        "setup_time": 0.11144568771123886,
+        "solve_time": 0.583668164908886,
+        "op_complexity": 1.2859337540695646,
+        "grid_complexity": 1.1303369444001912
+      },
+      "ruge_stuben": {
+        "iters": 142,
+        "kappa_raw": 220.50236390964247,
+        "kappa_eff": 77.53827904580847,
+        "setup_time": 0.07485858630388975,
+        "solve_time": 1.4664918892085552,
+        "op_complexity": 1.8261001413261775,
+        "grid_complexity": 1.500039827943285
+      },
+      "learned": {
+        "iters": 24,
+        "kappa_raw": 6.289065714194358,
+        "kappa_eff": 5.955380044193036,
+        "setup_time": 0.12802558485418558,
+        "solve_time": 0.5802205074578524,
+        "op_complexity": 1.8849822340979443,
+        "grid_complexity": 1.2735383144814403
+      }
+    }
+  },
+  "9": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349533,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 9827.95809348574,
+        "kappa_eff": 651.7517615949877,
+        "setup_time": 6.789341568946838e-07,
+        "solve_time": 0.5832999236881733,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2241.347863643405,
+        "kappa_eff": 142.19490472802016,
+        "setup_time": 0.0009144507348537445,
+        "solve_time": 0.6077042259275913,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.197468522652598,
+        "kappa_eff": 1.160390865494583,
+        "setup_time": 0.2951195603236556,
+        "solve_time": 0.06689766701310873,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 72,
+        "kappa_raw": 48.604462942495566,
+        "kappa_eff": 34.57495219072941,
+        "setup_time": 0.08518616482615471,
+        "solve_time": 0.7933618789538741,
+        "op_complexity": 1.284679844249327,
+        "grid_complexity": 1.1295378059222971
+      },
+      "ruge_stuben": {
+        "iters": 156,
+        "kappa_raw": 224.7128894956873,
+        "kappa_eff": 80.63389068642809,
+        "setup_time": 0.07268965430557728,
+        "solve_time": 1.611457779072225,
+        "op_complexity": 1.8171102585449728,
+        "grid_complexity": 1.4980185992791286
+      },
+      "learned": {
+        "iters": 26,
+        "kappa_raw": 7.506756653525383,
+        "kappa_eff": 6.305672980902856,
+        "setup_time": 0.1029524551704526,
+        "solve_time": 0.6190762408077717,
+        "op_complexity": 1.8917498490843496,
+        "grid_complexity": 1.2748471633112293
+      }
+    }
+  },
+  "10": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349550,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 6352.7524464730195,
+        "kappa_eff": 465.45526360615685,
+        "setup_time": 3.8743019104003906e-07,
+        "solve_time": 0.5875913687050343,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1875.9439286673637,
+        "kappa_eff": 138.97350527522906,
+        "setup_time": 0.000925084576010704,
+        "solve_time": 0.6094949971884489,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 14,
+        "kappa_raw": 1.302395882915362,
+        "kappa_eff": 1.2556474565815146,
+        "setup_time": 0.30224949307739735,
+        "solve_time": 0.08665903750807047,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 44,
+        "kappa_raw": 17.58549875493863,
+        "kappa_eff": 15.110099609497682,
+        "setup_time": 0.11273385863751173,
+        "solve_time": 0.48742643743753433,
+        "op_complexity": 1.2877299384923473,
+        "grid_complexity": 1.1304711458042933
+      },
+      "ruge_stuben": {
+        "iters": 111,
+        "kappa_raw": 213.19357936039808,
+        "kappa_eff": 80.59189710919993,
+        "setup_time": 0.07375985849648714,
+        "solve_time": 1.150479082018137,
+        "op_complexity": 1.8354512945215278,
+        "grid_complexity": 1.5050778605280974
+      },
+      "learned": {
+        "iters": 21,
+        "kappa_raw": 4.390275094606605,
+        "kappa_eff": 4.205255317939468,
+        "setup_time": 0.12957088463008404,
+        "solve_time": 0.5488744433969259,
+        "op_complexity": 1.8964125303962238,
+        "grid_complexity": 1.2756581305507986
+      }
+    }
+  },
+  "11": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349551,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 55778.91678191247,
+        "kappa_eff": 3579.8230334706586,
+        "setup_time": 6.798654794692993e-07,
+        "solve_time": 0.5839570453390479,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2219.838381324215,
+        "kappa_eff": 144.9693835698564,
+        "setup_time": 0.0009095817804336548,
+        "solve_time": 0.6073608873412013,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.3215681197843618,
+        "kappa_eff": 1.2748863692440369,
+        "setup_time": 0.3010500743985176,
+        "solve_time": 0.06066002044826746,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 90,
+        "kappa_raw": 74.69591002784831,
+        "kappa_eff": 47.8518611864665,
+        "setup_time": 0.11218534782528877,
+        "solve_time": 0.9915636060759425,
+        "op_complexity": 1.2864188630557487,
+        "grid_complexity": 1.130234781050242
+      },
+      "ruge_stuben": {
+        "iters": 165,
+        "kappa_raw": 248.4921269616987,
+        "kappa_eff": 89.83605491274383,
+        "setup_time": 0.07277701608836651,
+        "solve_time": 1.6992215355858207,
+        "op_complexity": 1.8157350429551053,
+        "grid_complexity": 1.4965449947229026
+      },
+      "learned": {
+        "iters": 32,
+        "kappa_raw": 10.086789415383887,
+        "kappa_eff": 8.948605684784104,
+        "setup_time": 0.1287907436490059,
+        "solve_time": 0.692662475630641,
+        "op_complexity": 1.887155236288839,
+        "grid_complexity": 1.2734133859051715
+      }
+    }
+  },
+  "12": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349539,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 4663.031248489764,
+        "kappa_eff": 262.5740822561311,
+        "setup_time": 4.9639493227005e-07,
+        "solve_time": 0.5835560625419021,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2169.369881914781,
+        "kappa_eff": 144.74421103275895,
+        "setup_time": 0.000913611613214016,
+        "solve_time": 0.6123898597434163,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.4280733255285478,
+        "kappa_eff": 1.2996305200113272,
+        "setup_time": 0.28776267543435097,
+        "solve_time": 0.06909195985645056,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 104,
+        "kappa_raw": 107.93087126589056,
+        "kappa_eff": 59.040845149766355,
+        "setup_time": 0.11129301227629185,
+        "solve_time": 1.1470285886898637,
+        "op_complexity": 1.285684859200261,
+        "grid_complexity": 1.1299508154284235
+      },
+      "ruge_stuben": {
+        "iters": 170,
+        "kappa_raw": 245.15548521520557,
+        "kappa_eff": 85.74391854106497,
+        "setup_time": 0.0723826251924038,
+        "solve_time": 1.7501524090766907,
+        "op_complexity": 1.8173079398865362,
+        "grid_complexity": 1.4969633007427467
+      },
+      "learned": {
+        "iters": 33,
+        "kappa_raw": 11.304959375689048,
+        "kappa_eff": 9.874216839906259,
+        "setup_time": 0.1276668068021536,
+        "solve_time": 0.6632947884500027,
+        "op_complexity": 1.8712618620525894,
+        "grid_complexity": 1.2693801150958801
+      }
+    }
+  },
+  "13": {
+    "matrix_size": 50214,
+    "matrix_nnz": 349546,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 17525.14439127643,
+        "kappa_eff": 1132.34519367041,
+        "setup_time": 6.94766640663147e-07,
+        "solve_time": 0.6065492294728756,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2147.145340013585,
+        "kappa_eff": 143.3839864030287,
+        "setup_time": 0.0009361198171973228,
+        "solve_time": 0.6165857966989279,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.3689642192066254,
+        "kappa_eff": 1.296285769362331,
+        "setup_time": 0.29247458931058645,
+        "solve_time": 0.0687613720074296,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 70,
+        "kappa_raw": 46.91016955303263,
+        "kappa_eff": 34.78056054984233,
+        "setup_time": 0.11241973098367453,
+        "solve_time": 0.7740161083638668,
+        "op_complexity": 1.286952218019946,
+        "grid_complexity": 1.130381965188991
+      },
+      "ruge_stuben": {
+        "iters": 157,
+        "kappa_raw": 244.40442158146647,
+        "kappa_eff": 81.50442024953176,
+        "setup_time": 0.07403657305985689,
+        "solve_time": 1.618669698946178,
+        "op_complexity": 1.8124395644636184,
+        "grid_complexity": 1.4960568765682878
+      },
+      "learned": {
+        "iters": 24,
+        "kappa_raw": 5.732888811987205,
+        "kappa_eff": 5.534399974946545,
+        "setup_time": 0.12856817338615656,
+        "solve_time": 0.5584672875702381,
+        "op_complexity": 1.8717278984740207,
+        "grid_complexity": 1.2697454893057714
+      }
+    }
+  },
+  "14": {
+    "matrix_size": 50220,
+    "matrix_nnz": 349580,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 11245.6182837848,
+        "kappa_eff": 831.6157259995223,
+        "setup_time": 5.736947059631348e-07,
+        "solve_time": 0.579784482717514,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1822.7000958996446,
+        "kappa_eff": 137.6474478427359,
+        "setup_time": 0.0009206514805555344,
+        "solve_time": 0.6102475775405765,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.3786748678540068,
+        "kappa_eff": 1.301895609418602,
+        "setup_time": 0.30124711338430643,
+        "solve_time": 0.07440279610455036,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 43,
+        "kappa_raw": 19.5640615600243,
+        "kappa_eff": 14.07656455813609,
+        "setup_time": 0.11504976637661457,
+        "solve_time": 0.47365204337984324,
+        "op_complexity": 1.2868184678757366,
+        "grid_complexity": 1.1301871764237357
+      },
+      "ruge_stuben": {
+        "iters": 107,
+        "kappa_raw": 178.29462227694586,
+        "kappa_eff": 72.1877917340261,
+        "setup_time": 0.07262509688735008,
+        "solve_time": 1.1055568102747202,
+        "op_complexity": 1.830868470736312,
+        "grid_complexity": 1.5040820390282756
+      },
+      "learned": {
+        "iters": 20,
+        "kappa_raw": 4.239282626780308,
+        "kappa_eff": 3.9986286923818635,
+        "setup_time": 0.12944622244685888,
+        "solve_time": 0.5100772064179182,
+        "op_complexity": 1.8630356427713255,
+        "grid_complexity": 1.2688570290720829
+      }
+    }
+  },
+  "15": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349499,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7810.623477605204,
+        "kappa_eff": 500.9215518313268,
+        "setup_time": 6.342306733131409e-07,
+        "solve_time": 0.5867172069847584,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2402.83989777148,
+        "kappa_eff": 145.70635654839185,
+        "setup_time": 0.0009172651916742325,
+        "solve_time": 0.6108644735068083,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.540887683107469,
+        "kappa_eff": 1.402148759530427,
+        "setup_time": 0.2984005017206073,
+        "solve_time": 0.07173703145235777,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 112,
+        "kappa_raw": 129.29589047515609,
+        "kappa_eff": 63.30699865769605,
+        "setup_time": 0.11135893873870373,
+        "solve_time": 1.2354199383407831,
+        "op_complexity": 1.2859893733601526,
+        "grid_complexity": 1.1298962502738117
+      },
+      "ruge_stuben": {
+        "iters": 196,
+        "kappa_raw": 333.90099935000416,
+        "kappa_eff": 94.60401838306004,
+        "setup_time": 0.07277864031493664,
+        "solve_time": 2.0277413316071033,
+        "op_complexity": 1.819344261356971,
+        "grid_complexity": 1.496325945396977
+      },
+      "learned": {
+        "iters": 35,
+        "kappa_raw": 12.333925971577639,
+        "kappa_eff": 10.869875063957839,
+        "setup_time": 0.12847958225756884,
+        "solve_time": 0.7304588425904512,
+        "op_complexity": 1.8907722196630032,
+        "grid_complexity": 1.273771830256686
+      }
+    }
+  },
+  "16": {
+    "matrix_size": 50216,
+    "matrix_nnz": 349528,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 6740.235745794419,
+        "kappa_eff": 439.72283239855665,
+        "setup_time": 5.494803190231323e-07,
+        "solve_time": 0.5802981872111559,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2212.74766150148,
+        "kappa_eff": 142.90801280350863,
+        "setup_time": 0.0009170575067400932,
+        "solve_time": 0.6064942805096507,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.4992576548458039,
+        "kappa_eff": 1.31827468482608,
+        "setup_time": 0.3057332718744874,
+        "solve_time": 0.06762257404625416,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 104,
+        "kappa_raw": 108.15604395917259,
+        "kappa_eff": 64.53187894423966,
+        "setup_time": 0.11161166988313198,
+        "solve_time": 1.1484118411317468,
+        "op_complexity": 1.285536494930306,
+        "grid_complexity": 1.1300183208539112
+      },
+      "ruge_stuben": {
+        "iters": 187,
+        "kappa_raw": 299.7848640716374,
+        "kappa_eff": 92.08714354930119,
+        "setup_time": 0.07234598323702812,
+        "solve_time": 1.919647304341197,
+        "op_complexity": 1.8078379986724955,
+        "grid_complexity": 1.4926716584355584
+      },
+      "learned": {
+        "iters": 34,
+        "kappa_raw": 11.680233297270702,
+        "kappa_eff": 10.363527369511543,
+        "setup_time": 0.10402080975472927,
+        "solve_time": 0.7139082914218307,
+        "op_complexity": 1.8911703783387883,
+        "grid_complexity": 1.2744742711486379
+      }
+    }
+  },
+  "17": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349629,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 11188.819971402445,
+        "kappa_eff": 742.6348543413985,
+        "setup_time": 2.2156164050102234e-06,
+        "solve_time": 0.5862077986821532,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2080.066722157679,
+        "kappa_eff": 142.82110453046963,
+        "setup_time": 0.0009232452139258385,
+        "solve_time": 0.6094459313899279,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.2622444690048873,
+        "kappa_eff": 1.1831816969728703,
+        "setup_time": 0.29476255737245083,
+        "solve_time": 0.059811449609696865,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 61,
+        "kappa_raw": 34.198573378657095,
+        "kappa_eff": 26.80865895261067,
+        "setup_time": 0.11276708915829659,
+        "solve_time": 0.6761164907366037,
+        "op_complexity": 1.2857857900803422,
+        "grid_complexity": 1.12993607742398
+      },
+      "ruge_stuben": {
+        "iters": 150,
+        "kappa_raw": 222.5638776615648,
+        "kappa_eff": 89.1901986585587,
+        "setup_time": 0.07266396097838879,
+        "solve_time": 1.5470497384667397,
+        "op_complexity": 1.8139084572503996,
+        "grid_complexity": 1.4954099209431069
+      },
+      "learned": {
+        "iters": 25,
+        "kappa_raw": 7.733920670717258,
+        "kappa_eff": 4.983818734098295,
+        "setup_time": 0.12854402046650648,
+        "solve_time": 0.6005747020244598,
+        "op_complexity": 1.887320559793381,
+        "grid_complexity": 1.273632435231097
+      }
+    }
+  },
+  "18": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349557,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 22664.954581924605,
+        "kappa_eff": 1485.761138359375,
+        "setup_time": 5.559995770454407e-07,
+        "solve_time": 0.58485546708107,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2113.3032534612785,
+        "kappa_eff": 144.44514541275194,
+        "setup_time": 0.0009589055553078651,
+        "solve_time": 0.6066707773134112,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.2838010380410108,
+        "kappa_eff": 1.2434258752663705,
+        "setup_time": 0.29917410388588905,
+        "solve_time": 0.06009492464363575,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 77,
+        "kappa_raw": 56.48271404709207,
+        "kappa_eff": 39.50380929363976,
+        "setup_time": 0.11122421361505985,
+        "solve_time": 0.8514012936502695,
+        "op_complexity": 1.2877298981282024,
+        "grid_complexity": 1.1301101176845416
+      },
+      "ruge_stuben": {
+        "iters": 167,
+        "kappa_raw": 274.4828215991499,
+        "kappa_eff": 81.05395759481466,
+        "setup_time": 0.0727605214342475,
+        "solve_time": 1.723678732290864,
+        "op_complexity": 1.8208017576532582,
+        "grid_complexity": 1.4972819052549833
+      },
+      "learned": {
+        "iters": 27,
+        "kappa_raw": 7.097401429455629,
+        "kappa_eff": 6.504508867995531,
+        "setup_time": 0.12961563654243946,
+        "solve_time": 0.6227168655022979,
+        "op_complexity": 1.8903211779480886,
+        "grid_complexity": 1.2736016248830124
+      }
+    }
+  },
+  "19": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349593,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 5318.723147261619,
+        "kappa_eff": 350.05206610706153,
+        "setup_time": 6.025657057762146e-07,
+        "solve_time": 0.58981788251549,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2087.023335927844,
+        "kappa_eff": 142.76334864159028,
+        "setup_time": 0.0009156698361039162,
+        "solve_time": 0.611155841499567,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.8130910990075038,
+        "kappa_eff": 1.3050549706208348,
+        "setup_time": 0.2907711025327444,
+        "solve_time": 0.0712853530421853,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 77,
+        "kappa_raw": 55.46951637651155,
+        "kappa_eff": 38.64521627818784,
+        "setup_time": 0.11182957328855991,
+        "solve_time": 0.8544890470802784,
+        "op_complexity": 1.2871768027391852,
+        "grid_complexity": 1.1302495071586451
+      },
+      "ruge_stuben": {
+        "iters": 166,
+        "kappa_raw": 305.68413304884774,
+        "kappa_eff": 87.42829421834544,
+        "setup_time": 0.07364174071699381,
+        "solve_time": 1.7159961210563779,
+        "op_complexity": 1.8175592760724615,
+        "grid_complexity": 1.497042951870806
+      },
+      "learned": {
+        "iters": 26,
+        "kappa_raw": 7.377541400521596,
+        "kappa_eff": 5.850317502469679,
+        "setup_time": 0.12868632841855288,
+        "solve_time": 0.6246397318318486,
+        "op_complexity": 1.896834318764964,
+        "grid_complexity": 1.2757322925585934
+      }
+    }
+  },
+  "20": {
+    "matrix_size": 50215,
+    "matrix_nnz": 349525,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 24918.050250409047,
+        "kappa_eff": 1591.5361473153205,
+        "setup_time": 7.059425115585327e-07,
+        "solve_time": 0.5882846750319004,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2139.274053063762,
+        "kappa_eff": 143.67086432488497,
+        "setup_time": 0.0009108064696192741,
+        "solve_time": 0.6151563301682472,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 14,
+        "kappa_raw": 2.181223146384561,
+        "kappa_eff": 1.8077439936165745,
+        "setup_time": 0.3027430819347501,
+        "solve_time": 0.08396736811846495,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 104,
+        "kappa_raw": 108.330827087557,
+        "kappa_eff": 60.74850895690157,
+        "setup_time": 0.11475523561239243,
+        "solve_time": 1.1504607377573848,
+        "op_complexity": 1.287410056505257,
+        "grid_complexity": 1.1305785123966943
+      },
+      "ruge_stuben": {
+        "iters": 181,
+        "kappa_raw": 282.15847823214347,
+        "kappa_eff": 87.3766922356183,
+        "setup_time": 0.07265796232968569,
+        "solve_time": 1.8694834960624576,
+        "op_complexity": 1.8131950504255776,
+        "grid_complexity": 1.494752563974908
+      },
+      "learned": {
+        "iters": 34,
+        "kappa_raw": 11.551179760744215,
+        "kappa_eff": 10.218208465639622,
+        "setup_time": 0.12952655088156462,
+        "solve_time": 0.7189536793157458,
+        "op_complexity": 1.8965195622630713,
+        "grid_complexity": 1.2755750273822564
+      }
+    }
+  },
+  "21": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349573,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 8317.030801214902,
+        "kappa_eff": 604.4343989540029,
+        "setup_time": 4.684552550315857e-07,
+        "solve_time": 0.5825268980115652,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1756.2248071079919,
+        "kappa_eff": 137.93193457538877,
+        "setup_time": 0.0009130658581852913,
+        "solve_time": 0.6120280791074038,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 13,
+        "kappa_raw": 1.3753997948115708,
+        "kappa_eff": 1.2949706169032627,
+        "setup_time": 0.289929935708642,
+        "solve_time": 0.07780791353434324,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 46,
+        "kappa_raw": 18.59723073618685,
+        "kappa_eff": 16.004085532866775,
+        "setup_time": 0.11143637634813786,
+        "solve_time": 0.5051251240074635,
+        "op_complexity": 1.2843039937294929,
+        "grid_complexity": 1.1296174602226339
+      },
+      "ruge_stuben": {
+        "iters": 117,
+        "kappa_raw": 198.76973822830212,
+        "kappa_eff": 73.61804290104155,
+        "setup_time": 0.0725329713895917,
+        "solve_time": 1.211986548267305,
+        "op_complexity": 1.8265684134644267,
+        "grid_complexity": 1.5021008821713762
+      },
+      "learned": {
+        "iters": 23,
+        "kappa_raw": 5.847922038857791,
+        "kappa_eff": 5.120149045024352,
+        "setup_time": 0.12788043357431889,
+        "solve_time": 0.5589170716702938,
+        "op_complexity": 1.8624235853455502,
+        "grid_complexity": 1.2685943007348108
+      }
+    }
+  },
+  "22": {
+    "matrix_size": 50220,
+    "matrix_nnz": 349572,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 10403.225254776184,
+        "kappa_eff": 715.7804376094724,
+        "setup_time": 4.908069968223572e-07,
+        "solve_time": 0.5887643238529563,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1835.9937998297223,
+        "kappa_eff": 139.62710818753175,
+        "setup_time": 0.0009233495220541954,
+        "solve_time": 0.6197643466293812,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 14,
+        "kappa_raw": 1.2845664047595904,
+        "kappa_eff": 1.2034288906509254,
+        "setup_time": 0.30208364874124527,
+        "solve_time": 0.08375451248139143,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 57,
+        "kappa_raw": 30.035119786661394,
+        "kappa_eff": 23.843642981585976,
+        "setup_time": 0.1115091061219573,
+        "solve_time": 0.6329441275447607,
+        "op_complexity": 1.2896255993042922,
+        "grid_complexity": 1.1310035842293906
+      },
+      "ruge_stuben": {
+        "iters": 140,
+        "kappa_raw": 269.9126979592736,
+        "kappa_eff": 82.77340308119948,
+        "setup_time": 0.07315215561538935,
+        "solve_time": 1.4461393747478724,
+        "op_complexity": 1.8182377307106976,
+        "grid_complexity": 1.4958383114297094
+      },
+      "learned": {
+        "iters": 22,
+        "kappa_raw": 4.790524832081261,
+        "kappa_eff": 4.367382710099881,
+        "setup_time": 0.1287058237940073,
+        "solve_time": 0.5858880272135139,
+        "op_complexity": 1.8867500829585893,
+        "grid_complexity": 1.2733373158104342
+      }
+    }
+  },
+  "23": {
+    "matrix_size": 50217,
+    "matrix_nnz": 349511,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 23533.84135802145,
+        "kappa_eff": 1573.6835261180602,
+        "setup_time": 6.668269634246826e-07,
+        "solve_time": 0.5871687643229961,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2036.0892064825262,
+        "kappa_eff": 141.18317012909748,
+        "setup_time": 0.0009180661290884018,
+        "solve_time": 0.6087740529328585,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.193356674185944,
+        "kappa_eff": 1.1720367754686898,
+        "setup_time": 0.2863323036581278,
+        "solve_time": 0.07075522374361753,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 57,
+        "kappa_raw": 29.440973537844606,
+        "kappa_eff": 23.99087210592225,
+        "setup_time": 0.1113519873470068,
+        "solve_time": 0.6333284405991435,
+        "op_complexity": 1.2892555599108468,
+        "grid_complexity": 1.1309516697532709
+      },
+      "ruge_stuben": {
+        "iters": 130,
+        "kappa_raw": 269.3272143907738,
+        "kappa_eff": 82.44814390772592,
+        "setup_time": 0.07342160772532225,
+        "solve_time": 1.3403448266908526,
+        "op_complexity": 1.82001138733831,
+        "grid_complexity": 1.500169265388215
+      },
+      "learned": {
+        "iters": 23,
+        "kappa_raw": 5.153190507505809,
+        "kappa_eff": 4.862369609688826,
+        "setup_time": 0.1300114542245865,
+        "solve_time": 0.5990734649822116,
+        "op_complexity": 1.895722881397152,
+        "grid_complexity": 1.2754644841388374
+      }
+    }
+  },
+  "24": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349563,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 14096.438191595464,
+        "kappa_eff": 910.5982246707254,
+        "setup_time": 6.491318345069885e-07,
+        "solve_time": 0.5823495322838426,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2234.795801435113,
+        "kappa_eff": 144.0297912904567,
+        "setup_time": 0.0009249253198504448,
+        "solve_time": 0.6113908709958196,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.534184549237742,
+        "kappa_eff": 1.3370212640873722,
+        "setup_time": 0.2913525318726897,
+        "solve_time": 0.06639099586755037,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 109,
+        "kappa_raw": 122.80855744487529,
+        "kappa_eff": 64.13621488299248,
+        "setup_time": 0.11341696325689554,
+        "solve_time": 1.1989786513149738,
+        "op_complexity": 1.2837628696400936,
+        "grid_complexity": 1.1294928214420836
+      },
+      "ruge_stuben": {
+        "iters": 192,
+        "kappa_raw": 304.6053137696791,
+        "kappa_eff": 92.16252122037481,
+        "setup_time": 0.07243882864713669,
+        "solve_time": 1.971737677231431,
+        "op_complexity": 1.8140707111450582,
+        "grid_complexity": 1.4952906270535056
+      },
+      "learned": {
+        "iters": 35,
+        "kappa_raw": 12.527692290681781,
+        "kappa_eff": 11.23573315051961,
+        "setup_time": 0.15464455541223288,
+        "solve_time": 0.7185391206294298,
+        "op_complexity": 1.8814662879080453,
+        "grid_complexity": 1.2726458113463033
+      }
+    }
+  },
+  "25": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349560,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 10248.96818119813,
+        "kappa_eff": 672.5240341893203,
+        "setup_time": 4.805624485015869e-07,
+        "solve_time": 0.5775283062830567,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2314.27736979567,
+        "kappa_eff": 144.23791857239118,
+        "setup_time": 0.0009202174842357635,
+        "solve_time": 0.6059377435594797,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.4428661474126978,
+        "kappa_eff": 1.324085830114634,
+        "setup_time": 0.30347681045532227,
+        "solve_time": 0.06768664065748453,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 113,
+        "kappa_raw": 125.88840853491817,
+        "kappa_eff": 64.75072860317371,
+        "setup_time": 0.11202866770327091,
+        "solve_time": 1.2435386767610908,
+        "op_complexity": 1.2875271770225427,
+        "grid_complexity": 1.130749930303875
+      },
+      "ruge_stuben": {
+        "iters": 200,
+        "kappa_raw": 342.403683986355,
+        "kappa_eff": 98.25409017991555,
+        "setup_time": 0.0722898542881012,
+        "solve_time": 2.0574672827497125,
+        "op_complexity": 1.8139689895869093,
+        "grid_complexity": 1.494942052650444
+      },
+      "learned": {
+        "iters": 36,
+        "kappa_raw": 13.35441938619072,
+        "kappa_eff": 11.512109922652805,
+        "setup_time": 0.13012157194316387,
+        "solve_time": 0.7327066464349627,
+        "op_complexity": 1.8903764732806958,
+        "grid_complexity": 1.2745230793739297
+      }
+    }
+  },
+  "26": {
+    "matrix_size": 50219,
+    "matrix_nnz": 349557,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 4845.844616300053,
+        "kappa_eff": 280.84355592929734,
+        "setup_time": 4.3120235204696655e-07,
+        "solve_time": 0.5783959720283747,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2001.1481710163496,
+        "kappa_eff": 141.20373078076258,
+        "setup_time": 0.0009271353483200073,
+        "solve_time": 0.6113372389227152,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.1806205527429658,
+        "kappa_eff": 1.1274215803273337,
+        "setup_time": 0.28782914113253355,
+        "solve_time": 0.059041352942585945,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 68,
+        "kappa_raw": 43.9822826664744,
+        "kappa_eff": 32.82273895005027,
+        "setup_time": 0.11107576731592417,
+        "solve_time": 0.7486949600279331,
+        "op_complexity": 1.285667287452404,
+        "grid_complexity": 1.1297716003902905
+      },
+      "ruge_stuben": {
+        "iters": 154,
+        "kappa_raw": 228.53040020985384,
+        "kappa_eff": 80.18723640713218,
+        "setup_time": 0.07333806529641151,
+        "solve_time": 1.5893888548016548,
+        "op_complexity": 1.821476897902202,
+        "grid_complexity": 1.4985563233039287
+      },
+      "learned": {
+        "iters": 25,
+        "kappa_raw": 6.160572733206089,
+        "kappa_eff": 5.78972983722879,
+        "setup_time": 0.1302620116621256,
+        "solve_time": 0.6057592704892159,
+        "op_complexity": 1.8933478660132683,
+        "grid_complexity": 1.2746769151118102
+      }
+    }
+  },
+  "27": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349562,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7036.212936121042,
+        "kappa_eff": 454.17558950925087,
+        "setup_time": 4.414469003677368e-07,
+        "solve_time": 0.5838651172816753,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2247.3898366650983,
+        "kappa_eff": 144.06733364291418,
+        "setup_time": 0.000921761617064476,
+        "solve_time": 0.6123163169249892,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 11,
+        "kappa_raw": 1.4863116205080338,
+        "kappa_eff": 1.3148025936117882,
+        "setup_time": 0.28607433289289474,
+        "solve_time": 0.06577160395681858,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 105,
+        "kappa_raw": 108.97019457178922,
+        "kappa_eff": 58.90918390771799,
+        "setup_time": 0.11346576828509569,
+        "solve_time": 1.1564290625974536,
+        "op_complexity": 1.2840726394745425,
+        "grid_complexity": 1.129575052769923
+      },
+      "ruge_stuben": {
+        "iters": 176,
+        "kappa_raw": 267.38448330482464,
+        "kappa_eff": 83.80375576160955,
+        "setup_time": 0.07303293608129025,
+        "solve_time": 1.8201956348493695,
+        "op_complexity": 1.8161756712686161,
+        "grid_complexity": 1.4956390138993987
+      },
+      "learned": {
+        "iters": 33,
+        "kappa_raw": 11.341911264970534,
+        "kappa_eff": 10.028813183590712,
+        "setup_time": 0.12812794093042612,
+        "solve_time": 0.6696034464985132,
+        "op_complexity": 1.872160017393195,
+        "grid_complexity": 1.2701421800947867
+      }
+    }
+  },
+  "28": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349568,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7039.237634946802,
+        "kappa_eff": 536.0864363315852,
+        "setup_time": 4.628673195838928e-07,
+        "solve_time": 0.5827157497406006,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1774.3168213030642,
+        "kappa_eff": 136.92941329502838,
+        "setup_time": 0.0009155282750725746,
+        "solve_time": 0.6123066302388906,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 12,
+        "kappa_raw": 1.3312459432089665,
+        "kappa_eff": 1.2586723293898365,
+        "setup_time": 0.3136499375104904,
+        "solve_time": 0.07376128155738115,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 38,
+        "kappa_raw": 12.977448782762762,
+        "kappa_eff": 11.630776927424218,
+        "setup_time": 0.11241323314607143,
+        "solve_time": 0.41838919650763273,
+        "op_complexity": 1.285249221896741,
+        "grid_complexity": 1.1299534031622127
+      },
+      "ruge_stuben": {
+        "iters": 103,
+        "kappa_raw": 187.9987253722147,
+        "kappa_eff": 77.02374246774288,
+        "setup_time": 0.07330423686653376,
+        "solve_time": 1.066799433901906,
+        "op_complexity": 1.83186103991212,
+        "grid_complexity": 1.5048389023855988
+      },
+      "learned": {
+        "iters": 21,
+        "kappa_raw": 5.60166237788084,
+        "kappa_eff": 4.637174104141608,
+        "setup_time": 0.12788923736661673,
+        "solve_time": 0.5655936617404222,
+        "op_complexity": 1.8874582341633102,
+        "grid_complexity": 1.274742124337887
+      }
+    }
+  },
+  "29": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349560,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 76681.24948555208,
+        "kappa_eff": 5502.334990474445,
+        "setup_time": 4.0512531995773315e-07,
+        "solve_time": 0.5852399962022901,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 1738.6753926100869,
+        "kappa_eff": 138.08523518953214,
+        "setup_time": 0.0009177234023809433,
+        "solve_time": 0.612698988057673,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 13,
+        "kappa_raw": 1.435945280473515,
+        "kappa_eff": 1.2466372629765012,
+        "setup_time": 0.303000052459538,
+        "solve_time": 0.07770895399153233,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 47,
+        "kappa_raw": 19.059337463489964,
+        "kappa_eff": 16.709719550230307,
+        "setup_time": 0.11238085106015205,
+        "solve_time": 0.5218186955899,
+        "op_complexity": 1.2881450966929855,
+        "grid_complexity": 1.1305906248755426
+      },
+      "ruge_stuben": {
+        "iters": 118,
+        "kappa_raw": 259.55096386057926,
+        "kappa_eff": 79.45238805588558,
+        "setup_time": 0.07371709495782852,
+        "solve_time": 1.2206643372774124,
+        "op_complexity": 1.8278750429110882,
+        "grid_complexity": 1.502210362818113
+      },
+      "learned": {
+        "iters": 21,
+        "kappa_raw": 4.7341768006579645,
+        "kappa_eff": 4.402301778140493,
+        "setup_time": 0.1286366106942296,
+        "solve_time": 0.542626516893506,
+        "op_complexity": 1.886308502116947,
+        "grid_complexity": 1.2734875940897685
+      }
+    }
+  },
+  "30": {
+    "matrix_size": 50216,
+    "matrix_nnz": 349552,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 7413.801997569491,
+        "kappa_eff": 487.0678213912089,
+        "setup_time": 5.112960934638977e-07,
+        "solve_time": 0.5855272514745593,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2180.9766856606097,
+        "kappa_eff": 144.68747784426552,
+        "setup_time": 0.0009190952405333519,
+        "solve_time": 0.607563903555274,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.283631334767973,
+        "kappa_eff": 1.2182224219021884,
+        "setup_time": 0.2859164299443364,
+        "solve_time": 0.05978482402861118,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 85,
+        "kappa_raw": 68.75191030750497,
+        "kappa_eff": 47.707668127905755,
+        "setup_time": 0.11226543691009283,
+        "solve_time": 0.9409067910164595,
+        "op_complexity": 1.2888382844326451,
+        "grid_complexity": 1.1306754819181137
+      },
+      "ruge_stuben": {
+        "iters": 168,
+        "kappa_raw": 233.9427823579566,
+        "kappa_eff": 84.34573881052296,
+        "setup_time": 0.07281551230698824,
+        "solve_time": 1.7304617017507553,
+        "op_complexity": 1.8199209273584473,
+        "grid_complexity": 1.4981480006372472
+      },
+      "learned": {
+        "iters": 30,
+        "kappa_raw": 8.716800239299728,
+        "kappa_eff": 7.824194680567893,
+        "setup_time": 0.12907872814685106,
+        "solve_time": 0.6614348189905286,
+        "op_complexity": 1.8933291756305213,
+        "grid_complexity": 1.274872550581488
+      }
+    }
+  },
+  "31": {
+    "matrix_size": 50218,
+    "matrix_nnz": 349500,
+    "schemes": {
+      "none": {
+        "iters": 500,
+        "kappa_raw": 143598.83152062763,
+        "kappa_eff": 9364.137861673398,
+        "setup_time": 5.066394805908203e-07,
+        "solve_time": 0.5831356570124626,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "jacobi": {
+        "iters": 500,
+        "kappa_raw": 2166.4672871112725,
+        "kappa_eff": 142.20017337705525,
+        "setup_time": 0.0009143445640802383,
+        "solve_time": 0.6135362032800913,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "ilu": {
+        "iters": 10,
+        "kappa_raw": 1.3957923290594858,
+        "kappa_eff": 1.3395186372559662,
+        "setup_time": 0.2836338188499212,
+        "solve_time": 0.061505453661084175,
+        "op_complexity": 0.0,
+        "grid_complexity": 0.0
+      },
+      "pyamg": {
+        "iters": 95,
+        "kappa_raw": 82.7721708628046,
+        "kappa_eff": 53.06677724607394,
+        "setup_time": 0.11074629426002502,
+        "solve_time": 1.0483299726620317,
+        "op_complexity": 1.285590844062947,
+        "grid_complexity": 1.1299932295192958
+      },
+      "ruge_stuben": {
+        "iters": 166,
+        "kappa_raw": 248.6093731137041,
+        "kappa_eff": 86.66306023437612,
+        "setup_time": 0.07231525611132383,
+        "solve_time": 1.7095270277932286,
+        "op_complexity": 1.809728183118741,
+        "grid_complexity": 1.4918156836194194
+      },
+      "learned": {
+        "iters": 31,
+        "kappa_raw": 9.214395809500061,
+        "kappa_eff": 8.423491886038812,
+        "setup_time": 0.12745303753763437,
+        "solve_time": 0.6434107478708029,
+        "op_complexity": 1.8576995708154507,
+        "grid_complexity": 1.2665976343143892
+      }
+    }
+  }
+}
