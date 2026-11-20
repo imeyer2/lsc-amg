@@ -154,7 +154,7 @@ matrices cannot be regenerated. Seeded reruns reproduce them within seed noise. 
 ## Credits and citation
 
 The code is by Ian Meyer. The paper is by Ian Meyer, Mahboub Baccouch and Lochana Palayangoda (University
-of Nebraska Omaha). The method was developed for Ian Meyer's mathematics master's thesis. The two-level
+of Nebraska at Omaha). The method was developed for Ian Meyer's mathematics master's thesis. The two-level
 comparison and the small row-threshold policies are later follow-up work. An earlier prototype trained
 with REINFORCE is at <https://github.com/imeyer2/Learning_SoC_Preconditioning>.
 
