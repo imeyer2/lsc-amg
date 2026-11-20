@@ -1,12 +1,14 @@
 # LSC-AMG · Learning strength of connection for algebraic multigrid
 
+Accompanying code for "Preconditioning Large Sparse Linear Systems via Learned Algebraic Multigrid" pre-print. 
+
 **Question.** Algebraic multigrid (AMG) decides which matrix entries are "strong" connections with a fixed
 rule of thumb (keep `a_ij` if it is large compared with the rest of its row). Can a neural network learn
 that choice for a family of PDE matrices, so that AMG becomes a better preconditioner for conjugate
 gradients (CG)? And does the gain survive when the cost of the whole solve, not just the iteration count,
 is measured?
 
-**Contribution.** A graph-attention network (GAT) scores every off-diagonal entry of a sparse SPD matrix.
+A graph-attention network (GAT) scores every off-diagonal entry of a sparse SPD matrix.
 The selected entries form the strength graph of classical smoothed aggregation, and the resulting
 two-level V-cycle preconditions CG. The policy is trained with evolution strategies, because the path from
 network weights to solver iterations is not differentiable. This repository contains the implementation,
