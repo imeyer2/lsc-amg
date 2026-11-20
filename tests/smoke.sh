@@ -8,9 +8,18 @@ cd "$(dirname "$0")/.."
 source .venv/bin/activate
 export LSC_OUTPUTS="outputs_smoke"
 rm -rf outputs_smoke
-python tests/test_problems.py
+# Bit-identity checks (tests/test_problems.py, tests/test_twolevel.py --identity-only) compare hashes
+# recorded on the reference platform (a Linux x86_64 cluster). Elsewhere floating-point last bits, and the
+# perforated_l Triangle mesh, can differ, so they only warn unless SMOKE_STRICT=1.
+ident() {
+  if [ "${SMOKE_STRICT:-0}" = 1 ]; then "$@"
+  else "$@" || echo "WARNING: '$*' differs from the reference-platform hashes (expected off the reference Linux x86_64 platform; SMOKE_STRICT=1 makes this fatal)"
+  fi
+}
+ident python tests/test_problems.py
 python tests/test_fast_policy.py
-python tests/test_twolevel.py
+ident python tests/test_twolevel.py --identity-only
+python tests/test_twolevel.py --pipeline-only
 E="--experiments tests/smoke_experiments.csv --scalability tests/smoke_scalability.csv --local"
 python scripts/reproduce.py train $E
 python scripts/reproduce.py select $E
