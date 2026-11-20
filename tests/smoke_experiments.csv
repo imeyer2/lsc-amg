@@ -1,0 +1,3 @@
+# Tiny end-to-end check (minutes on a laptop-sized node).
+problem,label,grid_n,pop,mini_batch,epochs
+perforated_l,smoke,1000,20,4,2
