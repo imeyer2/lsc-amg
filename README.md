@@ -32,6 +32,7 @@ finite elements on random meshes: rotated anisotropic diffusion, a log-normal co
 strategies: antithetic Gaussian perturbations, rank-based fitness shaping, and Adam on the ES gradient.
 
 Reward: −log(PCG iterations) − λ·log(operator complexity) (train_es_HPC.py::amg_reward; manuscript runs used λ = 0.1, --sigma_scale_threshold 50)
+`--reward residual --reward_k K` instead trains on the K-step PCG residual log-ratio against a default SA-AMG baseline, minus λ·log(operator complexity).
 
 ## Headline result: fewer iterations, more time
 

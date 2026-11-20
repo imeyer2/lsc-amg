@@ -31,6 +31,7 @@ connection* is learned rather than hand-tuned.
      prolongation smoothing and a `splu` coarse solver.
    - With a predefined strength graph, PyAMG builds a **two-level** hierarchy.
 5. Reward: −log(PCG iterations) − λ·log(operator complexity) (train_es_HPC.py::amg_reward; manuscript runs used λ = 0.1, --sigma_scale_threshold 50)
+   `--reward residual --reward_k K` instead trains on the K-step PCG residual log-ratio against a default SA-AMG baseline, minus λ·log(operator complexity).
 
 **Training** (`train_es_HPC.py`). The map from parameters to `C`, to the hierarchy and to the reward is not
 differentiable, so the policy is trained with OpenAI-style evolution strategies:

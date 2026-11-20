@@ -41,6 +41,7 @@ os.environ["MKL_NUM_THREADS"] = "1"
 os.environ["OPENBLAS_NUM_THREADS"] = "1"
 
 import numpy as np
+import pyamg
 import torch
 import torch.multiprocessing as mp
 import torch.nn as nn
@@ -105,6 +106,13 @@ _STAG_MARGIN = float(os.environ.get("LSC_STAG_MARGIN", "1.5"))
 _ES_ROWS_EXTRA = 3   # shared rows after eps: theta, sigma_vec, per-sample stag starts
 _MN_PORT = int(os.environ.get("LSC_MN_PORT", "0"))
 _MN_AUTH = os.environ.get("LSC_MN_AUTH", "lscamg")
+# Reward choice (env so worker processes see it; set by --reward/--reward_k):
+#   iters    (default; all released results) R = -log(PCG iters to 1e-8) - λ·log(OC)
+#   residual R = (1/K) Σ_t [log(|r_t^SA|+ε) - log(|r_t^learn|+ε)] - λ·log(OC+ε), over K
+#            PCG iterations against a default PyAMG SA-AMG baseline (as written in the paper)
+_REWARD = os.environ.get("LSC_REWARD", "iters")
+_REWARD_K = int(os.environ.get("LSC_REWARD_K", "16"))
+_SA_BASE_CACHE = {}
 from amg_diagnostics import compute_diagnostic_batch
 from shared_cache import create_shared_cache, load_from_shared_cache, cleanup_shared_cache
 
@@ -209,6 +217,8 @@ def amg_reward(sample, sel_mask_np, B_extra=None, coarse_solver="splu",
 
     try:
         ml = build_pyamg_solver(sample.A, C, B, coarse_solver=coarse_solver)
+        if _REWARD == "residual":
+            return residual_reward(sample.A, ml, reward_lambda_cx)
         if stag_start is not None:
             iters = pcg_iteration_count_stag(
                 sample.A, ml, tol=1e-8, maxiter=500, stag_start=stag_start,
@@ -224,6 +234,26 @@ def amg_reward(sample, sel_mask_np, B_extra=None, coarse_solver="splu",
         return reward, iters
     except Exception:
         return -200.0, 500
+
+
+def _k_residuals(A, M, K):
+    """Residual norms |r_1|..|r_K| of K PCG iterations (b = ones, x0 = 0), padded if CG stops early."""
+    _, res = pcg_iterations(A, M, tol=0.0, maxiter=K)
+    res = res or [float(np.linalg.norm(np.ones(A.shape[0])))]
+    return np.array(res + [res[-1]] * (K - len(res)))
+
+
+def residual_reward(A, ml, reward_lambda_cx, eps=1e-12):
+    """K-step residual reward against a default PyAMG SA-AMG baseline (LSC_REWARD=residual)."""
+    key = (A.shape[0], A.nnz, float(A.data.sum()))
+    if key not in _SA_BASE_CACHE:
+        base = pyamg.smoothed_aggregation_solver(A)
+        _SA_BASE_CACHE[key] = _k_residuals(A, base.aspreconditioner(cycle="V"), _REWARD_K)
+    r_base = _SA_BASE_CACHE[key]
+    r_learn = _k_residuals(A, ml.aspreconditioner(cycle="V"), _REWARD_K)
+    oc = sum(lvl.A.nnz for lvl in ml.levels) / max(ml.levels[0].A.nnz, 1)
+    r_pcg = float(np.mean(np.log(r_base + eps) - np.log(r_learn + eps)))
+    return r_pcg - reward_lambda_cx * float(np.log(oc + eps)), _REWARD_K
 
 
 # ============================================================
@@ -1607,6 +1637,11 @@ def main():
                         help="Training set size (HPC default: 64)")
 
     # Reward
+    parser.add_argument("--reward", choices=["iters", "residual"], default=None,
+                        help="iters (default): -log(PCG iters) - λ·log(OC); residual: K-step "
+                             "residual log-ratio vs SA-AMG - λ·log(OC) (env LSC_REWARD)")
+    parser.add_argument("--reward_k", type=int, default=None,
+                        help="K PCG iterations for --reward residual (default 16; env LSC_REWARD_K)")
     parser.add_argument("--reward_lambda_cx", type=float, default=2.0,
                         help="Weight for operator-complexity penalty in "
                              "reward: R = -log(iters) - λ·log(OC) (paper: 0.1; default 2.0, docs/METHODS.md)")
@@ -1688,6 +1723,12 @@ def main():
                         help="RNG seed (default: SLURM_ARRAY_TASK_ID or 0)")
 
     args = parser.parse_args()
+    global _REWARD, _REWARD_K
+    if args.reward is not None:
+        os.environ["LSC_REWARD"] = _REWARD = args.reward
+    if args.reward_k is not None:
+        os.environ["LSC_REWARD_K"] = str(args.reward_k)
+        _REWARD_K = args.reward_k
 
     # ── Handle --print_slurm ──
     if args.print_slurm:
